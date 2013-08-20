@@ -1,0 +1,71 @@
+author: Agnate.FloFloo
+database: false
+description: EconomyXP uses Experience as an Economy system.
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: ca.agnate.EconXP.EconXP
+name: EconXP
+startup: postworld
+version: 1.0.0
+commands:
+    econxp:
+        description: Base command for EconXP
+        usage: |
+            /econxp add <player> <amt> - Add experience to a player.
+            /econxp subtract <player> <amt> - Subtract experience from a player.
+            /econxp set <player> <amt> - Set experience of a player.
+            /econxp clear <player> - Clear a player's experience.
+            /econxp balance <player> - See a player's current experience.
+            /econxp balanceself- See your current experience.
+            /econxp version - See the version of EconXP.
+            /econxp give <player> <amt> - Give a player some of your exp.
+            /econxp transfer <giver> <amt> <receiver> - Transfer exp from one player to another.
+            /econxp multiply <player> <mult> - Multiply a player's exp by a multiplier.
+            /econxp divide <player> <div> - Divide a player's exp by a divisor.
+    exp:
+        description: Base command for EconXP
+        usage: |
+            /exp add <player> <amt> - Add experience to a player.
+            /exp subtract <player> <amt> - Subtract experience from a player.
+            /exp set <player> <amt> - Set experience of a player.
+            /exp clear <player> - Clear a player's experience.
+            /exp balance <player> - See a player's current experience.
+            /exp balanceself - See your current experience.
+            /exp version - See the version of EconXP.
+            /exp give <player> <amt> - Give a player some of your exp.
+            /exp transfer <giver> <amt> <receiver> - Transfer exp from one player to another.
+            /exp multiply <player> <mult> - Multiply a player's exp by a multiplier.
+            /exp divide <player> <div> - Divide a player's exp by a divisor.
+permissions:
+    econxp.add:
+        description: Allows user to add experience to player.
+        default: op
+    econxp.subtract:
+        description: Allows user to remove experience from a player.
+        default: op
+    econxp.set:
+        description: Allows user to set experience of a player.
+        default: op
+    econxp.clear:
+        description: Allows user to clear experience of a player.
+        default: op
+    econxp.balance:
+        description: Allows user to check current experience of a player or themselves.
+        default: op
+    econxp.balanceself:
+        description: Allows user to check their current experience.
+        default: true
+    econxp.version:
+        description: Check the version of EconXP.
+        default: op
+    econxp.give:
+        description: Give a player some of your experience.
+        default: op
+    econxp.transfer:
+        description: Transfer experience from one player to another.
+        default: op
+    econxp.multiply:
+        description: Multiply a player's experience by a multiplier.
+        default: op
+    econxp.divide:
+        description: Divide a player's experience by a divisor.
+        default: op
